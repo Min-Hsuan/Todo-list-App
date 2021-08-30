@@ -1,0 +1,63 @@
+.tab-block{
+  flex: 3;
+  height: 100%;
+  padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.tab-title{
+  display: flex;
+  justify-content: space-between;
+}
+.tab-block ul{
+  padding: 0;
+}
+.tab-title h2{
+  font-size: 2rem;
+  margin: 0;
+
+}
+.todo{
+  color: #EE5050;
+}
+.done{
+  color: #3175DB;
+}
+.all{
+  color: #505050;
+}
+.actions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+
+}
+.actions button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
+}
+.button-add{
+  font-size: 2rem;
+  font-weight: normal;
+}
+.clean-done{
+  font-size: 1rem;
+  color: #9d9d9d;
+  text-decoration: underline;
+}
+.backdrop{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+}

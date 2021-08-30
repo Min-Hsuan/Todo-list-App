@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  width: 50rem;
+  height: 40rem;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 25px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px){
+  .App{
+    width: 100%;
+    height: auto;
+    min-height: 40rem;
+    flex-direction: column;
+    position: static;
+    transform: unset;
+    border-radius: 8px;
+  }
+}

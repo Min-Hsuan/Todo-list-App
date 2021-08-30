@@ -1,0 +1,119 @@
+.tab {
+  background-color: #ececec;
+  flex: 1.2;
+  height: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.tab ul {
+  padding: 0;
+}
+.small-text {
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 0;
+}
+.tab-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  background-color: #d1d1d1;
+  border-radius: 12px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.active {
+  background-color: #fff;
+}
+.total{
+  font-weight: bold;
+  padding: 0 1.5rem;
+  font-size: 1.2rem;
+}
+.icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+.icon svg{
+  width: 1.5rem;
+  height: auto;
+}
+.tab-item:first-child .icon{
+  background-color: #EE5050;
+  color: #fff;
+}
+
+.tab-item:nth-child(2) .icon{
+  background-color: #3175DB;
+  color: #fff;
+}
+
+.tab-item:last-child .icon{
+  background-color: #505050;
+  color: #fff;
+}
+.tab-item:first-child.active{
+  background-color: #EE5050;
+  color: #fff;
+}
+.tab-item:first-child.active .icon{
+  background-color: #fff;
+  color: #EE5050;
+}
+.tab-item:nth-child(2).active{
+  background-color: #3175DB;
+  color: #fff;
+}
+.tab-item:nth-child(2).active .icon{
+  background-color: #fff;
+  color: #3175DB;
+}
+.tab-item:last-child.active{
+  background-color: #505050;
+  color: #fff;
+}
+.tab-item:last-child.active .icon{
+  background-color: #fff;
+  color: #505050;
+}
+@media screen and (max-width: 768px){
+  .tab {
+    padding: 1rem;
+    flex: unset;
+  }
+  .tab ul {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    margin-bottom: 0;
+    gap: 0.8rem;
+  }
+  .tab-item{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    margin: 0;
+  }
+  .tab-item span{
+    grid-column: 1/2;
+    grid-row: 1 / span1;
+  }
+  .tab-item p.total{
+    grid-column: 2 / 3;
+    grid-row: 1 / span1;
+
+    margin: 0;
+    text-align: right;
+  }
+  .tab-item p{
+    grid-column: 1 / 4;
+    grid-row: 2 / span1;
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+
+  }
+}
